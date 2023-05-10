@@ -5,4 +5,5 @@
 4. Display current directory contents, including hidden files (starting with .). Use the long format
 5. Display current directory contents in a long format with user and group IDs displayed numerically, and hidden files (starting with .)
 6. Create a script that creates a directory named my first directory in the /tmp/ directory
+7. Move the file betty from /tmp/myfirstdirectory
 
