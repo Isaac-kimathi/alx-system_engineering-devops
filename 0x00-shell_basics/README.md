@@ -13,5 +13,7 @@
 12. Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
 13. script that prints the type of the file named iamafile. The file iamafile will be in the /tmp directory when we will run your script.
 14. Create a symbolic link to /bin/ls, named __ls__ in the current working directory
-15.
- 
+15. Script that moves all files beginning with an uppercase letter to the directory /tmp/u
+16. script that deletes all files in the current working directory that end with the character ~
+17. script that creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory
+18. 
