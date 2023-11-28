@@ -1,2 +1,2 @@
-Regular Expression
-Regex built for the Oniguruma library
+Regular Expression(RegEx)
+RegEx built for the Oniguruma library
