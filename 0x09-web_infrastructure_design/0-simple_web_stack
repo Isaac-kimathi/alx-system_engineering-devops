@@ -1,0 +1,12 @@
+
+The server(8:8:8:8) hosts the entire infrastructure, managing incoming requests and serving responses.
+Role of domain name: for translation of human-readable address to the server's IP using DNS.
+Type of DNS record: type "A" because it facilities the translation from domain to IP.
+Role of webserver(Nginx): handles HTTP requests, serving static content, and forwarding dynamic requests to the application server.
+Role of application server: executes the website's code, generating dynamic content requested by users through the webserver.
+codebase: application files containing the website's logic and functions.
+MySQL: relational database that stores and retrieves data required by the application, ensuring data persistence.
+ISSUES WITH THE INFRASTRUCTURE:
+SPOF(single point of failure) incase the server goes down the entire website becomes inaccessable.
+Downtime when maintenance or deployment of new code is needed. causes temporary unavailablity.
+Scaling Challenges. with a single server scaling is difficult.

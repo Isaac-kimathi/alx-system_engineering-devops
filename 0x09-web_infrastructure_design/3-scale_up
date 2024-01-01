@@ -1,0 +1,8 @@
+
+For every additional element, why you are adding it.
+Load-balancer(HAproxy) configured as cluster with the other one. Ensures high availability and fault tolerance by traffic distribution across multiple servers with the cluster configuration adding redundancy, preventing a SPOF.
+Separation of web server, application server, and Database:
+1. Webserver: handles static content such as HTML, CSS, and images. Efficience processing of static requests and enhance resource allocation.
+2. Application server: Executes dynamic code, process requests, and generate dynamic content. it ensures optimal handling of application logic and functionalities.
+3. Database: store and retrieve data independently. enforces data persistence and separation of concerns between data storage and application logic.
+This ensures scability, performance and maintainance. Therefore easier troubleshooting and resource optimization.

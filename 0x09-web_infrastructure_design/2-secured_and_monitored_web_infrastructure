@@ -1,0 +1,12 @@
+
+Additional elements, why you are adding them?
+Firewalls: To provide an addictional layer of security, controlling incoming and outgoing traffic based security configuration.
+SSL: ensure security by encryption of HTTP.
+Monitoring: monitors server health, performance, and security in real-time, allowing proactive issue detection and resolution.
+Issues with the infrastructure:
+Why terminating SSL at the load balancer level is an issue?
+It can expose decrypted traffic with the inter traffic.
+Why having only one MySQL server capable of accepting writes is an issue?
+it poses a single point of failure
+Why having servers with all the same components (database, web server and application server) might be a problem?
+it leads to uniform vulnerabilities, therefore potential systematic issues. 

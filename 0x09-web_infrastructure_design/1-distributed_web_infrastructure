@@ -1,0 +1,19 @@
+
+ADDICTIONAL ELEMENTS AND REASONS FOR ADDING THEM:
+1. Load-balancer(HAproxy): distribution of incoming traffic among multiple servers to prevent overloading, ensuring better performance and availability.
+2. Server 1 & 2: Two servers to handle incoming requests, creating redundancyand reducing SPOF.
+DISTRIBUTION ALGORITHM FOR LOAD-BALANCER AND HOW IT WORKS:
+HAproxy uses a Round Robin distribution algorithm, distributes requests evenly among servers to maintain balance and prevent overloading.
+Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both.
+It's enabling an Active-Active setup.
+Active-Passive: One server handles traffic actively while the other remains on standby, providing redundancy incase of failure.
+Active-Active: All servers actively handles traffic simultaneous, promoting better resource utilization.
+How a database Primary-Replica (Master-Slave) cluster works?
+The primary node handles write operations, and the replica node copy data from the primary, handling read operations. Therefore ensuring data redundancy, fault tolerance, and scalability.
+What is the difference between the Primary node and the Replica node in regard to the application?
+Primary nodes: handles write operations, updating the databse with new data.
+Replica nodes: handles read operations, providing a scalable solution for serving multiple read requests.
+The issues are with this infrastructure are:
+1. SPOF may occur at the load balancer.
+2. security issues because there is no firewall or HTTPS
+3. No monitoring tools may lead to undetected issues. 
