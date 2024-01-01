@@ -1,3 +1,4 @@
+https://imgur.com/a/OiEZ0uD
 
 The server(8:8:8:8) hosts the entire infrastructure, managing incoming requests and serving responses.
 Role of domain name: for translation of human-readable address to the server's IP using DNS.

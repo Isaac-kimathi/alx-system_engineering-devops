@@ -1,3 +1,4 @@
+https://imgur.com/a/iF61rx8
 
 For every additional element, why you are adding it.
 Load-balancer(HAproxy) configured as cluster with the other one. Ensures high availability and fault tolerance by traffic distribution across multiple servers with the cluster configuration adding redundancy, preventing a SPOF.
