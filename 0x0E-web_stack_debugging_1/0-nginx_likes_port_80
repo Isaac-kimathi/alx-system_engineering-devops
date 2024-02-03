@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bash script with the minimum number of commands to automate my fix of what was preventing Nginx installation from listening on port 80
+# solution: creation of symbolic link which deletes the existing ../sites-enabled/default and replacing it with
+# ..sites-available/default.
+
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
