@@ -10,7 +10,7 @@ sudo apt-get update -y -qq && \
 echo -e "\nSetting up the support instruments.\n"
 
 # starting nginx service
-sudo service nginx start
+sudo systemctl nginx start
 
 # allowing nginx on firewall
 sudo ufw allow 'Nginx HTTP'
