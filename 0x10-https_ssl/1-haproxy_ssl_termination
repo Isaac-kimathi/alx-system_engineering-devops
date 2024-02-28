@@ -46,6 +46,6 @@ frontend isaackk-frontend-https
 
 backend isaackk-backend
 	balance roundrobin
-	server 249734-web-01 100.25.19.204:80 check
-	server 249734-web-02 54.157.159.85:80 check
+	server 249734-web-01 100.24.72.76:80 check
+	server 249734-web-02 54.90.37.212:80 check
 
