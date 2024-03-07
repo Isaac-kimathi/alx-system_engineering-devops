@@ -12,7 +12,7 @@ def number_of_subscribers(subreddit):
     header = {
             'User-Agent': 'Google Chrome Version 81.0.4044.129'
         }
-    response = requests.get(url, headers=headers, allow_redirects=False)
+    response = requests.get(url, headers=header, allow_redirects=False)
     results = response.json()
 
     try:
