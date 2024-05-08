@@ -11,9 +11,9 @@ def top_ten(subreddit):
         print("None")
 
     url = 'https://www.reddit.com/r/{}/hot/.json'.format(subreddit)
-    header = {'User-agent': 'Google Chrome Version 81.0.4044.129'}
+    user_agent = {'User-agent': 'Google Chrome Version 109.0.5414.165'}
     args = {'limit': 10}
-    response = get(url, headers=header, params=args,
+    response = get(url, headers=user_agent, params=args,
             allow_redirects=False)
     results = response.json()
 
@@ -25,5 +25,3 @@ def top_ten(subreddit):
 
     except Exception:
             print("None")
-
-
