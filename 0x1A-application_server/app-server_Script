@@ -1,0 +1,48 @@
+echo "Updating Packages and Installing Requirements"
+
+# update Package Manager
+sudo apt-get update
+
+# install nginx
+sudo apt-get install -y nginx
+
+# Install pip
+sudo apt-get install -y python3-pip
+
+# Installation of Flask, Flask_cors, sqlachemy using PIP
+pip install flask
+pip install flask_cors
+pip install sqlalchemy
+
+# Install net-tools
+sudo apt install -y net-tools
+
+# Install GUNICORN
+sudo apt-get install -y gunicorn
+
+# Remove any current AIRBNB Repository
+git clone https://github.com/Isaac-kimathi/AirBnB_clone_v2
+git clone https://github.com/Isaac-kimathi/AirBnB_clone_v3
+git clone https://github.com/Isaac-kimathi/AirBnB_clone_v4
+
+# Change Directory
+cd AirBnB_clone_v2
+
+# Switch Branches
+git checkout app-server
+
+# Define the path to the Nginx configuration file to be overwritten
+NGINX_CONFIG="/etc/nginx/sites-enabled/default"
+
+# Overwrite the Nginx configuration file with the provided configuration
+sudo tee "$NGINX_CONFIG" > /dev/null <<EOF
+server {
+    listen 80 default_server;
+
+    listen [::]:80 default_server;
+    root /var/www/html;
+    index index.html index.htm index.nginx-debian.html;
+    server_name _;
+    add_header X-served-By \$hostname;
+}
+EOF
